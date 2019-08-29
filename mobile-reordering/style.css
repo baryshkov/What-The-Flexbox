@@ -41,6 +41,8 @@ img {
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  flex-flow: column;
 }
 
 input {
@@ -60,17 +62,75 @@ section, footer {
 
 /* Flex Container */
 .flex-nav ul {
+  display: flex;
   border:1px solid black;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.flex-nav li {
+  flex: 3;
+}
+
+.flex-nav .social {
+  flex: 1;
+}
+
+.hide {
+  display: none;
+}
+
 @media all and (max-width:1000px) {
 
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
+
+  .flex-nav li {
+    flex: 1 1 50%;
+  }
+
+  .flex-nav .social {
+    flex: 1 1 25%;
+  }
 }
 
 
 @media all and (max-width:500px) {
-  
+
+  .toggleNav {
+    display: block;
+  }
+
+  .flex-nav ul {
+    display: none;
+  }
+  .flex-nav li {
+    flex-basis: 100%;
+  }
+
+  .flex-nav {
+    order: 1;
+  }
+
+  .top {
+    order: 2;
+  }
+
+  .details {
+    order: 3;
+  }
+
+  .signup {
+    order: 4;
+  }
+
+  .hero {
+    order: 5;
+  }
+
+  footer {
+    order: 6;
+  }
 }

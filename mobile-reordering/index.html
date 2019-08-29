@@ -65,12 +65,15 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>
-    
-    $(function() {
-      $('.toggleNav').on('click',function() {
-        $('.flex-nav ul').toggleClass('open');
-      });
-    });
+
+    let menuButton = document.querySelector('.toggleNav');
+    let menuItems = document.querySelector('.flex-nav ul');
+
+    function toggleClass(e) {
+      menuItems.style.display = menuItems.style.display === 'none' ? 'block' : 'none';
+    }
+
+    menuButton.addEventListener('click', toggleClass);
 
   </script>
 </body>

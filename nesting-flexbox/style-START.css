@@ -34,10 +34,39 @@ a:hover {
   background:rgba(0,0,0,0.4);
 }
 
-
+ /*flex-container*/
 .slider-nav ul {
+  display: flex;
   list-style: none;
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  align-items: stretch;
+}
+
+.slider-nav li {
+  flex: 2;
+  text-align: center;
+  display: flex;
+}
+
+.slider-nav a {
+  /*display: block;*/
+  /*width: 100%;*/
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-nav span {
+  /*font-size: 2rem;*/
+}
+
+.slider-nav .arrow {
+  flex: 1;
+}
+
+.arrow a {
+  font-size: 30px;
 }
 

@@ -49,14 +49,65 @@ a {
 }
 
 .price {
+  margin: 10px 0;
   font-size: 50px;
   font-family: serif;
-  margin: 10px 0;
 }
 
+ /*My first (VERY GOOD) attempt*/
 
 .pricing-grid {
+  display: flex;
+  /*justify-content: space-between;*/
   max-width:750px;
   margin: 0 auto;
-  
+  align-items: center;
 }
+
+.plan {
+  flex: 1 1 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.plan1, .plan3 {
+  height: 80%;
+}
+
+a.cta {
+  display: block;
+}
+
+/*.pricing-grid {*/
+/*  display: flex;*/
+/*  !*justify-content: space-between;*!*/
+/*  max-width:750px;*/
+/*  margin: 0 auto;*/
+/*  align-items: center;*/
+/*}*/
+
+/*.plan {*/
+/*  flex: 1 1 100%;*/
+/*  !*border: 1px solid red;*!*/
+/*  text-align: center;*/
+/*  background: rgba(255, 255, 255, 0.2);*/
+/*  padding: 20px;*/
+/*  margin: 20px;*/
+/*  border-radius: 5px;*/
+/*  display: flex;*/
+/*  flex-wrap: wrap;*/
+/*}*/
+
+/*.plan > * {*/
+/*  flex: 1 1 100%;*/
+/*}*/
+/*.plan1, .plan3 {*/
+/*  height: 80%;*/
+/*}*/
+
+/*a.cta {*/
+/*  display: block;*/
+/*}*/
