@@ -99,6 +99,29 @@ a.button {
 */
 
 
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-bar {
+  display: flex;
+}
 /*
   Overall Layout
 */
+
+
+.app-wrap {
+  display: flex;
+  flex-flow: column;
+}
+
+.app-wrap > * {
+  flex: 1 1 auto;
+}
+
+.content {
+  overflow-y: scroll;
+}

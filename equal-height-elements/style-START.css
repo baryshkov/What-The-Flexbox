@@ -34,3 +34,14 @@ a {
 
 /* Flexbox Starts Here: */
 
+.elements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  /*height: 100px;*/
+
+  flex: 1 1 calc(33% - 20px);
+}
